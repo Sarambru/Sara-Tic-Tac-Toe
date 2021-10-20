@@ -1,0 +1,40 @@
+{
+  "credentials": {
+    "email": "an@example.email",
+    "password": "an example password",
+  }
+}
+echo
+
+curl "https://tic-tac-toe-api-development.herokuapp.com" \
+  --include \
+  --request POST \
+  --header "Content-Type: application/json" \
+  --data '{
+      "credentials": {
+        "email": "'"${EMAIL}"'",
+        "password": "'"${PASSWORD}"'",
+        "password_confirmation": "'"${PASSWORD}"'"
+      }
+  }'
+
+echo
+
+  curl "https://tic-tac-toe-api-development.herokuapp.com" \
+  --include \
+  --request POST \
+  --header "Content-Type: application/json" \
+  --data '{
+      "credentials": {
+        "email": "'"${EMAIL}"'",
+        "password": "'"${PASSWORD}"'"
+      }
+  }'
+
+
+
+curl "https://tic-tac-toe-api-development.herokuapp.com" \
+  --include \
+  --request DELETE \
+
+echo
