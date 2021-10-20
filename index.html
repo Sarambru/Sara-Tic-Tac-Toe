@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+      </style>
+      <title>Tic Tac Toe</title>
+
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +20,64 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
-    </body>
+      <h1>Tic Tac Toe</h1>
+      <form>
+      <div style="float:right">
+            <button name="sign-out" type="submit" id="signOut" > Sign Out </button>
+      </div>
+      </form>
+
+<span class= "all-forms">
+<div class="form-container">
+      <form id= "sign-up-form" style="border:1px solid black">
+        <h2 id="sign-up-title">Sign Up</h2>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="credentials[email]" placeholder= "Email" required>
+
+           <label for="password">Password</label><br>
+            <input type="text" id="password" name= "credentials[password]" placeholder= "Password" required>
+
+            <label for="confirm password">Confirm Password</label>
+            <input type="text" id="passwordConfirm" name= "credentials[passwordConfirm]" placeholder="Confirm Password" required>
+
+            <button type="submit" id= "sign-up"> Register</button>
+            <p> By creating an account you agree to our Terms & Privacy</p>
+            </form>
+</div>
+
+<div class= "form-container2">
+  <form id="log-in-form" style="border:1px solid black">
+    <h2 id="log-in-title">Log In </h2>
+    <label for="email2">Email</label><br>
+    <input type="text" id="email2" name="credentials[email]" placeholder= "Email" required>
+
+    <label for="password">Password</label><br>
+    <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password" required>
+
+    <label for="login">Log In </label>
+    <input type="submit" id="login">
+  </div>
+</span>
+
+<body>
+  <section>
+    <div class="game--container">
+      <div data-cell-index="0" class="cell"></div>
+      <div data-cell-index="1" class="cell"></div>
+      <div data-cell-index="2" class="cell"></div>
+      <div data-cell-index="3" class="cell"></div>
+      <div data-cell-index="4" class="cell"></div>
+      <div data-cell-index="5" class="cell"></div>
+      <div data-cell-index="6" class="cell"></div>
+      <div data-cell-index="7" class="cell"></div>
+      <div data-cell-index="8" class="cell"></div>
+    </div>
+    <h2 class="game--status"></h2>
+    <button class="game--restart">New Game</button>
+  </section>
+
+
+</body>
+</body>
 </html>
