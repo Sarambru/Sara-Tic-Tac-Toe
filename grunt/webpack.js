@@ -111,4 +111,4 @@ module.exports = {
     watch: false,
     keepalive: false
   }
-}
+},
